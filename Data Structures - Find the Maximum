@@ -1,0 +1,21 @@
+public class FindMaximum {
+    public static int findMax(int[] arr) {
+        int maxNum = arr[0];
+        for (int i = 1; i < arr.length; i++)
+       {
+            if (arr[i] > maxNum) {
+                maxNum = arr[i];
+            }
+        }
+        return maxNum;
+    }
+
+    public static void main(String[] args)
+{
+        int[] numbers = {10, 5, 8, 21, 3};
+        System.out.println("The largest number is: " + findMax(numbers)); 
+    }
+}
+
+
+
